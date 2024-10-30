@@ -5,7 +5,7 @@ import { AboutUs } from "../components/home/AboutUs";
 import { Services } from "../components/home/Services";
 import { DoctorConsultationAd } from "../components/home/DoctorConsultationAd";
 import { Testimonials } from "../components/home/Testimonial";
-
+import { NirvarPromo } from "../components/home/NirvarPromo";
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
       <Services />
       <DoctorConsultationAd />
       <Testimonials />
+      <NirvarPromo />
     </>
   );
 };
