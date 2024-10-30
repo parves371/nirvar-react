@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { TitleBaack } from "./tittle-back";
 
 const AboutUs = () => {
   return (
@@ -12,10 +13,17 @@ const AboutUs = () => {
               className="w-[500px] h-[500px] object-cover rounded-lg"
             />
           </div>
-          <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8">
-            <h2 className="text-5xl font-bold text-gray-800 mb-4">About Us</h2>
+          <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8 ">
+            <TitleBaack back={"About us"} front={"About us"} />
             <p className="text-gray-600 mb-4 text-xl">
-              Your health, simplified. Nirvar is the all-in-one medical app that connects you with doctors, offers a range of tests, delivers medicine right to your doorstep, and stores your complete medical history securely in one place. With features like BPM monitoring and diabetes tracking, we empower you to take charge of your well-being. Plus, our blood bank ensures lifesaving donations are just a tap away. Experience convenience and care at your fingertips with Nirvar.
+              Your health, simplified. Nirvar is the all-in-one medical app that
+              connects you with doctors, offers a range of tests, delivers
+              medicine right to your doorstep, and stores your complete medical
+              history securely in one place. With features like BPM monitoring
+              and diabetes tracking, we empower you to take charge of your
+              well-being. Plus, our blood bank ensures lifesaving donations are
+              just a tap away. Experience convenience and care at your
+              fingertips with Nirvar.
             </p>
             <button className="bg-teal-500 text-white px-16 py-2 rounded-full hover:bg-teal-600 transition duration-300">
               Learn More
