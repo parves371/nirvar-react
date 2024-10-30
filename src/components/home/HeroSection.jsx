@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   return (
     <section className="bg-[url('https://images.unsplash.com/photo-1730138056313-dc4b284d8dd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center h-[85vh] relative">
       <div className="container mx-auto flex flex-col md:flex-row items-center p-8 md:p-20 text-white ">
@@ -43,4 +43,3 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;

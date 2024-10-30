@@ -2,7 +2,7 @@ import React from "react";
 import MedicalHistoryTracking from "./services-left";
 import { TitleBaack } from "./tittle-back";
 
-const Services = () => {
+export const Services = () => {
   return (
     <section className="bg-cyan-100 py-10">
   <div className="container mx-auto px-4">
@@ -50,4 +50,3 @@ const Services = () => {
   );
 };
 
-export default Services;

@@ -1,7 +1,7 @@
 import React from "react";
 import { TitleBaack } from "./tittle-back";
 
-const DoctorConsultationAd = () => {
+export const DoctorConsultationAd = () => {
   return (
     <section className="bg-white">
       <div className="container mx-auto flex flex-col md:flex-row items-center p-6 my-8">
@@ -29,4 +29,3 @@ const DoctorConsultationAd = () => {
   );
 };
 
-export default DoctorConsultationAd;
