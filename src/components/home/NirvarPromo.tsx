@@ -5,7 +5,9 @@ import { TitleBaack } from "./tittle-back";
 export const NirvarPromo = () => {
   return (
     <section className="bg-white py-8">
-      <div className="container mx-auto">
+    
+      <div className="w-full">
+      <div className="container mx-auto ">
         <div className="flex flex-col md:flex-row">
           <div className="flex-1">
             <div className="grid grid-cols-2 gap-4">
@@ -70,6 +72,7 @@ export const NirvarPromo = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
