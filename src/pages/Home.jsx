@@ -7,6 +7,8 @@ import { DoctorConsultationAd } from "../components/home/DoctorConsultationAd";
 import { Testimonials } from "../components/home/Testimonial";
 import { NirvarPromo } from "../components/home/NirvarPromo";
 import FAQSection from "../components/home/FAQSection";
+import PartnerSection from "../components/home/PartnerSection";
+import Footer from "../components/layout/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <Testimonials />
       <NirvarPromo />
       <FAQSection />
+      {/* <PartnerSection/> */}
+      <Footer/>
     </>
   );
 };
