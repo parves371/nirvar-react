@@ -1,8 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import TestimonialCard from "../home/testimonial-card";
+import "swiper/css/pagination"; // Import Swiper styles
 import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const testimonialData = [
   {
@@ -24,47 +24,50 @@ const testimonialData = [
     image: "https://medlineplus.gov/images/m_logo_25.png",
   },
   {
-    id: 45,
+    id: 5,
     image: "https://medlineplus.gov/images/m_logo_25.png",
   },
 ];
 
 export default function TestimonialSlider() {
   return (
-    <Swiper
-      spaceBetween={20}
-      loop
-      pagination={{
-        dynamicBullets: true,
-      }}
-      modules={[Pagination]}
-      className="mySwiper"
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-      }}
-    >
-      {testimonialData.map((testimonial) => (
-        <SwiperSlide key={testimonial.id}>
-          <div className="flex justify-center items-center">
-            <img
-              className="w-72 h-16 bg-cover"
-              src={testimonial.image}
-              alt=""
-            />
-          </div>{" "}
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="relative">
+      <Swiper
+        spaceBetween={20}
+        loop
+        pagination={{
+          dynamicBullets: true,
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }}
+      >
+        {testimonialData.map((testimonial) => (
+          <SwiperSlide key={testimonial.id}>
+            <div className="flex justify-center items-center mb-16">
+              <img
+                className="w-72 h-16 bg-cover"
+                src={testimonial.image}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }

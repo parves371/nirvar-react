@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination"; // Import Swiper styles
 import TestimonialCard from "../home/testimonial-card";
 import { Pagination } from "swiper/modules";
 
@@ -50,6 +51,7 @@ export default function TestimonialSlider() {
       loop
       pagination={{
         dynamicBullets: true,
+        clickable: true,
       }}
       modules={[Pagination]}
       className="mySwiper"
