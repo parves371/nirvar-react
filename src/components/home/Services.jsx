@@ -1,19 +1,21 @@
 import React from "react";
 import MedicalHistoryTracking from "./services-left";
 import { TitleBaack } from "./tittle-back";
+import { icons } from "../../assets/icons/icons";
 
 export const Services = () => {
   return (
-    <section className="bg-white py-10">
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <section className="bg-white ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#E0FFFF"
-          fill-opacity="1"
+          fill="#c1f2f2" // Updated fill color
+          fillOpacity="1"
           d="M0,160L60,181.3C120,203,240,245,360,245.3C480,245,600,203,720,154.7C840,107,960,53,1080,37.3C1200,21,1320,43,1380,53.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
+        />
       </svg>
-      <div className="w-full bg-[#E0FFFF]">
-        <div className=" container mx-auto px-4">
+
+      <div className="bg-[#c1f2f2] px-8 ">
+        <div className=" container mx-auto ">
           <TitleBaack back="services" front="Services" />
 
           <div className="flex flex-col lg:flex-row lg:space-x-10 justify-between items-center pt-8">
@@ -22,26 +24,27 @@ export const Services = () => {
               <div className="flex flex-col gap-y-4">
                 <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
                   <MedicalHistoryTracking
-                    imgink={""}
+                    imgink={icons.Medical_History_Tracking}
                     title="Medical History Tracking"
-                    description="Nirvar's advanced medical history tracking capability. Gone are the days of having to manually track and manage medical history. Nirvar's AI-powered system can automatically track and analyze medical history, providing valuable insights and recommendations for better health outcomes."
+                    description="The most ective method of prescribing drugs. The doctor selects the patient, adds prescriptions, dosages, and directions depending on the patient's medical history and condition, and ensures compliance with current legislation through the platform."
                   />
                   <MedicalHistoryTracking
-                    imgink={""}
-                    title="Medical History Tracking"
+                    imgink={icons.Digital_Prescription}
+                    title="Digital Prescription
+"
                     description="Nirvar's advanced medical history tracking capability. Gone are the days of having to manually track and manage medical history. Nirvar's AI-powered system can automatically track and analyze medical history, providing valuable insights and recommendations for better health outcomes."
                   />
                 </div>
                 <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
                   <MedicalHistoryTracking
-                    imgink={""}
-                    title="Medical History Tracking"
-                    description="Nirvar's advanced medical history tracking capability. Gone are the days of having to manually track and manage medical history. Nirvar's AI-powered system can automatically track and analyze medical history, providing valuable insights and recommendations for better health outcomes."
+                    imgink={icons.Doctor_Consultation}
+                    title="Doctor Consultation"
+                    description="With Nirvar, connecting with a doctor has never been easier. Say goodbye to long waiting times and endless phone calls. With just a few taps on your smartphone, you can book an appointment with a qualified healthcare professional who suits your needs."
                   />
                   <MedicalHistoryTracking
-                    imgink={""}
-                    title="Medical History Tracking"
-                    description="Nirvar's advanced medical history tracking capability. Gone are the days of having to manually track and manage medical history. Nirvar's AI-powered system can automatically track and analyze medical history, providing valuable insights and recommendations for better health outcomes."
+                    imgink={icons.Doctor_Consultation}
+                    title="My Health"
+                    description="Nirvar offers a comprehensive suite of features that cater to all aspects of your health management. In the My Health section, you can monitor your vital signs such as BPM beats per minute  and keep track of conditions like diabetes with ease."
                   />
                 </div>
               </div>
@@ -58,16 +61,13 @@ export const Services = () => {
           </div>
         </div>
       </div>
-      <svg
-        className=""
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#E0FFFF"
-          fill-opacity="1"
+          fill="#c1f2f2" // Fill color
+          fillOpacity="1"
           d="M0,160L60,181.3C120,203,240,245,360,245.3C480,245,600,203,720,154.7C840,107,960,53,1080,37.3C1200,21,1320,43,1380,53.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-        ></path>
+        />
       </svg>
     </section>
   );

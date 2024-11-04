@@ -13,9 +13,9 @@ export const AboutUs = () => {
               className="w-[500px] h-[500px] object-cover rounded-lg"
             />
           </div>
-          <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8 ">
+          <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8 px-4">
             <TitleBaack back={"About us"} front={"About us"} />
-            <p className="text-gray-600 mb-4 text-xl">
+            <p className="text-gray-600 mb-16 text-xl mt-16">
               Your health, simplified. Nirvar is the all-in-one medical app that
               connects you with doctors, offers a range of tests, delivers
               medicine right to your doorstep, and stores your complete medical

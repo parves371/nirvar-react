@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-green-500 text-white py-8">
+    <footer className="bg-[#07a88c] text-white py-8">
       <div className="container mx-auto px-4 flex flex-wrap justify-between">
         {/* First Column */}
         <div className="flex flex-col w-full sm:w-[45%] md:w-[30%] lg:w-[23%] mb-8 sm:mb-0">
@@ -72,28 +72,24 @@ const Footer = () => {
         {/* Third Column */}
         <div className="flex flex-col w-full sm:w-[45%] md:w-[30%] lg:w-[23%]">
           <h3 className="font-bold text-lg mb-2">Contact Us</h3>
-          <p className="text-sm sm:text-base flex items-center gap-x-2">
+          <div className="text-sm sm:text-base flex items-center gap-x-2">
             <FaLocationArrow />
             <div>House 7, Road 7, Block Link, Mirpur DOHS, Dhaka 1215</div>
-          </p>
-          <p className="flex items-center  gap-x-2 mt-2">
+          </div>
+          <div className="flex items-center gap-x-2 mt-2">
             <FaPhone />
             <div>
-              +880 190 000 0000
+              <div>+880 190 000 0000</div>
               <div>+880 190 000 0000</div>
             </div>
-          </p>
-          <p className="flex items-center  gap-x-2 mt-2">
+          </div>
+          <div className="flex items-center gap-x-2 mt-2">
             <MdMailLock />
             <div>
-              info@nirvar.com
+              <div>info@nirvar.com</div>
               <div>contact@nirvar.com</div>
             </div>
-          </p>
-
-          <p>
-            <i className="fas fa-envelope"></i>
-          </p>
+          </div>
         </div>
       </div>
 

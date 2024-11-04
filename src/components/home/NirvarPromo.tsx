@@ -4,14 +4,14 @@ import { TitleBaack } from "./tittle-back";
 
 export const NirvarPromo = () => {
   return (
-    <section className="bg-white py-8">
+    <section className="bg-white pt-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           {/* Left Side Image */}
           <div className="flex-1 w-full md:w-1/2 mb-8 md:mb-0">
             <div className="grid grid-cols-1 gap-4">
               <img
-                src="path/to/patient-info.png"
+                src="https://img.freepik.com/premium-photo/smartphones-tablets_72104-1110.jpg?w=826"
                 alt="Patient Info"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -20,7 +20,7 @@ export const NirvarPromo = () => {
           
           {/* Right Side Text Content */}
           <div className="flex-1 w-full md:w-1/2 mt-8 md:mt-0 md:ml-8">
-            <TitleBaack back={"why nirvar"} front={"why nirvar"} />
+            <TitleBaack back={"Why nirvar"} front={"Why nirvar"} />
             <ul className="pt-8 space-y-4">
               <li className="flex items-start">
                 <span className="text-teal-500 mr-2">✔</span>
@@ -56,14 +56,14 @@ export const NirvarPromo = () => {
             <div className="mt-6">
               <p className="text-gray-600">Download The App Now:</p>
               <div className="flex items-center mt-3 flex-wrap">
-                <Link to="/download" className="mr-4">
+                <Link to="/download">
                   <img
-                    src="path/to/google-play.png"
+                    src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
                     alt="Google Play"
-                    className="h-10 mr-4"
+                    className="h-20 w-60"
                   />
                 </Link>
-                <img src="path/to/qr-code.png" alt="QR Code" className="h-10" />
+                <img src="https://img.freepik.com/premium-vector/vaccination-qr-code-vector-illustration_689336-39.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_siglip" alt="QR Code" className="h-20" />
               </div>
             </div>
           </div>

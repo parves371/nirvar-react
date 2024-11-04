@@ -1,14 +1,15 @@
 import React from "react";
 import Navbar from "../components/layout/Navbar";
-import { HeroSection } from "../components/home/HeroSection";
+
 import { AboutUs } from "../components/home/AboutUs";
-import { Services } from "../components/home/Services";
 import { DoctorConsultationAd } from "../components/home/DoctorConsultationAd";
-import { Testimonials } from "../components/home/Testimonial";
-import { NirvarPromo } from "../components/home/NirvarPromo";
 import FAQSection from "../components/home/FAQSection";
-import PartnerSection from "../components/home/PartnerSection";
+import { HeroSection } from "../components/home/HeroSection";
+import { NirvarPromo } from "../components/home/NirvarPromo";
+import { Services } from "../components/home/Services";
+import Testimonial from "../components/home/Testimonial";
 import Footer from "../components/layout/Footer";
+
 
 const Home = () => {
   return (
@@ -18,11 +19,10 @@ const Home = () => {
       <AboutUs />
       <Services />
       <DoctorConsultationAd />
-      <Testimonials />
+      <Testimonial />
       <NirvarPromo />
       <FAQSection />
-      {/* <PartnerSection/> */}
-      <Footer/>
+      <Footer />
     </>
   );
 };
