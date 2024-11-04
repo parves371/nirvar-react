@@ -16,7 +16,7 @@ export const Services = () => {
 
       <div className="bg-[#c1f2f2] px-8 ">
         <div className=" container mx-auto ">
-          <TitleBaack back="services" front="Services" />
+          <TitleBaack back="Services" front="Services" />
 
           <div className="flex flex-col lg:flex-row lg:space-x-10 justify-between items-center pt-8">
             {/* Content Section */}

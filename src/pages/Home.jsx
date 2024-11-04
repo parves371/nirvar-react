@@ -9,7 +9,7 @@ import { NirvarPromo } from "../components/home/NirvarPromo";
 import { Services } from "../components/home/Services";
 import Testimonial from "../components/home/Testimonial";
 import Footer from "../components/layout/Footer";
-
+import OurPartner from "../components/home/OurPartner";
 
 const Home = () => {
   return (
@@ -22,6 +22,7 @@ const Home = () => {
       <Testimonial />
       <NirvarPromo />
       <FAQSection />
+      <OurPartner />
       <Footer />
     </>
   );

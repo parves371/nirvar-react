@@ -24,7 +24,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="bg-[#ffffff] pb-12">
+    <section className="bg-[#ffffff] pb-8">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ccddd8" // Fill color

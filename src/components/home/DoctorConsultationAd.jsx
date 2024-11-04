@@ -4,7 +4,7 @@ import { TitleBaack } from "./tittle-back";
 export const DoctorConsultationAd = () => {
   return (
     <section className="bg-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-6 my-8">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-8 my-8">
         <div className="w-full md:w-[45%] flex justify-center md:justify-start">
           <img
             src="https://images.unsplash.com/photo-1584467735815-f778f274e296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9jdG9yfGVufDB8fDB8fHww"

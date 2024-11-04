@@ -5,7 +5,7 @@ import { TitleBaack } from "./tittle-back";
 export const NirvarPromo = () => {
   return (
     <section className="bg-white pt-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           {/* Left Side Image */}
           <div className="flex-1 w-full md:w-1/2 mb-8 md:mb-0">
