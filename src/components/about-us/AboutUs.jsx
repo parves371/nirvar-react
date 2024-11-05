@@ -1,7 +1,6 @@
 import React from "react";
 import { TitleBack } from "../home/tittle-back";
 
-
 export const AboutUs = () => {
   return (
     <div className="bg-white my-16">
@@ -14,9 +13,12 @@ export const AboutUs = () => {
               className="w-[500px] h-[500px] object-cover rounded-lg"
             />
           </div>
-          <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8 px-4">
-            <TitleBack back={"About us"} front={"About us"} />
-            <p className="text-gray-600 mb-16 text-xl mt-16">
+          <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8 px-4 ">
+            <h2 className="text-[#1b8677] mb-8 text-3xl mt-16 font-bold">
+              Introducing Nirvar:
+              <br/> Your All-in-One Medical App
+            </h2>
+            <p className="text-[#1b0d1c] mb-16 text-xl mt-8 font-medium">
               Your health, simplified. Nirvar is the all-in-one medical app that
               connects you with doctors, offers a range of tests, delivers
               medicine right to your doorstep, and stores your complete medical
@@ -26,9 +28,6 @@ export const AboutUs = () => {
               just a tap away. Experience convenience and care at your
               fingertips with Nirvar.
             </p>
-            <button className="bg-teal-500 text-white px-16 py-2 rounded-full hover:bg-teal-600 transition duration-300">
-              Learn More
-            </button>
           </div>
         </div>
       </div>

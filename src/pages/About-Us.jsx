@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../components/layout/Navbar";
 import { HeroSection } from "../components/about-us/HeroSection";
-import { AboutUs } from "../components/home/AboutUs";
+import { AboutUs } from "../components/about-us/AboutUs";
 import { Services } from "../components/home/Services";
-import { NirvarPromo } from "../components/home/NirvarPromo";
 import OurPartner from "../components/home/OurPartner";
 import Footer from "../components/layout/Footer";
+import { NirvarPromo } from "../components/home/NirvarPromo";
 
 const About_Us = () => {
   return (
