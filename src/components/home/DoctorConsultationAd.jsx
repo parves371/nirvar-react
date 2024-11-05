@@ -1,5 +1,6 @@
 import React from "react";
-import { TitleBaack } from "./tittle-back";
+import { TitleBack } from "./tittle-back";
+
 
 export const DoctorConsultationAd = () => {
   return (
@@ -13,7 +14,7 @@ export const DoctorConsultationAd = () => {
           />
         </div>
         <div className="w-full md:w-[45%] mt-8 md:mt-0 md:ml-8 text-center md:text-left">
-          <TitleBaack
+          <TitleBack
             back={"Doctor Consultation"}
             front={"Doctor Consultation"}
           />

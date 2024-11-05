@@ -1,6 +1,6 @@
 import React from "react";
 import MedicalHistoryTracking from "./services-left";
-import { TitleBaack } from "./tittle-back";
+import { TitleBack } from "./tittle-back";
 import { icons } from "../../assets/icons/icons";
 
 export const Services = () => {
@@ -16,7 +16,7 @@ export const Services = () => {
 
       <div className="bg-[#c1f2f2] px-8 ">
         <div className=" container mx-auto ">
-          <TitleBaack back="Services" front="Services" />
+          <TitleBack back="Services" front="Services" />
 
           <div className="flex flex-col lg:flex-row lg:space-x-10 justify-between items-center pt-8">
             {/* Content Section */}

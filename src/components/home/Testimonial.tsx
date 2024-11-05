@@ -1,7 +1,7 @@
 import React from "react";
 import TestimonialSlider from "../slider/TestimonialSlider";
 import TestimonialCard from "./testimonial-card";
-import { TitleBaack } from "./tittle-back";
+import { TitleBack } from "./tittle-back";
 
 const Testimonial = () => {
   return (
@@ -17,7 +17,7 @@ const Testimonial = () => {
       <div className="bg-[#ccddd8]">
         <div className="container mx-auto">
           <div className="ml-10 lg:ml-0">
-            <TitleBaack front={"Testimonial"} back={"Testimonial"} />
+            <TitleBack front={"Testimonial"} back={"Testimonial"} />
           </div>
           <div className="pt-16"></div>
           <TestimonialSlider />

@@ -25,7 +25,7 @@ const TestimonialCard = ({ name, role, image, testimonial }) => {
           {testimonial}
         </p>
 
-        <div className="absolute bottom-12 right-0 p-4">
+        <div className="absolute bottom-16 right-8 p-4">
           <svg
             fill="#d1ddea"
             viewBox="0 0 256 256"

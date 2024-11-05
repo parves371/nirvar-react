@@ -1,6 +1,6 @@
 import React from "react";
 import { FAQItem } from "./FAQItem";
-import { TitleBaack } from "./tittle-back";
+import { TitleBack } from "./tittle-back";
 
 const FAQSection = () => {
   const faqItems = [
@@ -25,16 +25,16 @@ const FAQSection = () => {
 
   return (
     <section className="bg-[#ffffff] pb-8">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#ccddd8" // Fill color
+          fill="#ccddd8" // Updated fill color
           fillOpacity="1"
           d="M0,160L60,181.3C120,203,240,245,360,245.3C480,245,600,203,720,154.7C840,107,960,53,1080,37.3C1200,21,1320,43,1380,53.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
         />
       </svg>
       <div className="relative bg-[#ccddd8]">
         <div className="w-full flex justify-center items-center flex-col mb-12">
-          <TitleBaack back="FAQ" front="FAQ" />
+          <TitleBack back="FAQ" front="FAQ" />
         </div>
         <div className="bg-gray-200 p-4 rounded-lg container mx-auto">
           {faqItems.map((item, index) => (

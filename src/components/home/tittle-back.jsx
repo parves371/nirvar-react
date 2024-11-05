@@ -1,14 +1,17 @@
 import React from "react";
 
-export const TitleBaack = ({ back, front }) => {
+export const TitleBack = ({ back, front }) => {
   return (
-    <div className="relative">
-      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#666666] mb-4 z-10 absolute left-[-10px] lg:bottom-[-50px] bottom-[-40px]">
-        {back}
-      </h2>
-      <h2 className="text-4xl md:text-5xl lg:text-6xl z-0 font-bold text-[#a9d3ca] mb-4">
-        {front}
-      </h2>
+    <div className="flex justify-start items-center">
+      <div className="relative flex flex-col items-center">
+        <h2 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px] text-[#ebf8f5] font-semibold">
+          {back}
+        </h2>
+
+        <h2 className="absolute top-8 sm:top-12 md:top-16 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#666666] font-semibold">
+          {front}
+        </h2>
+      </div>
     </div>
   );
 };

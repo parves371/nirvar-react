@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TitleBaack } from "./tittle-back";
+import { TitleBack } from "./tittle-back";
 
 export const NirvarPromo = () => {
   return (
@@ -20,7 +20,7 @@ export const NirvarPromo = () => {
           
           {/* Right Side Text Content */}
           <div className="flex-1 w-full md:w-1/2 mt-8 md:mt-0 md:ml-8">
-            <TitleBaack back={"Why nirvar"} front={"Why nirvar"} />
+            <TitleBack back={"Why nirvar"} front={"Why nirvar"} />
             <ul className="pt-8 space-y-4">
               <li className="flex items-start">
                 <span className="text-teal-500 mr-2">✔</span>
