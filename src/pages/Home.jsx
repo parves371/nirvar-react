@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/layout/Navbar";
 
-// import { AboutUs } from "../components/about-us/AboutUs";
 import { DoctorConsultationAd } from "../components/home/DoctorConsultationAd";
 import FAQSection from "../components/home/FAQSection";
 import { HeroSection } from "../components/home/HeroSection";
