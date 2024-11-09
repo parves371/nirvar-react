@@ -1,10 +1,9 @@
 import React from "react";
 import { TitleBack } from "../home/tittle-back";
 
-
 export const AboutUs = () => {
   return (
-    <div className="bg-white my-16">
+    <div className="bg-white py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-[50%]">

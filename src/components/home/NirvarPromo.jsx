@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { TitleBack } from "./tittle-back";
 
+import Img from "../../assets/Asset-1.webp";
+
 export const NirvarPromo = () => {
   return (
     <section className="bg-white pt-8">
@@ -11,13 +13,13 @@ export const NirvarPromo = () => {
           <div className="flex-1 w-full md:w-1/2 mb-8 md:mb-0">
             <div className="grid grid-cols-1 gap-4">
               <img
-                src="https://img.freepik.com/premium-photo/smartphones-tablets_72104-1110.jpg?w=826"
+                src={Img}
                 alt="Patient Info"
-                className="rounded-lg shadow-lg w-full"
+                className="rounded-lg  w-full h-full object-cover`"
               />
             </div>
           </div>
-          
+
           {/* Right Side Text Content */}
           <div className="flex-1 w-full md:w-1/2 mt-8 md:mt-0 md:ml-8">
             <TitleBack back={"Why nirvar"} front={"Why nirvar"} />
@@ -46,7 +48,7 @@ export const NirvarPromo = () => {
                 </p>
               </li>
             </ul>
-            
+
             {/* Learn More Button */}
             <button className="mt-8 bg-teal-500 text-white py-3 px-10 rounded-full shadow-lg hover:bg-teal-600 transition duration-300">
               Learn More
@@ -63,7 +65,11 @@ export const NirvarPromo = () => {
                     className="h-20 w-60"
                   />
                 </Link>
-                <img src="https://img.freepik.com/premium-vector/vaccination-qr-code-vector-illustration_689336-39.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_siglip" alt="QR Code" className="h-20" />
+                <img
+                  src="https://img.freepik.com/premium-vector/vaccination-qr-code-vector-illustration_689336-39.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_siglip"
+                  alt="QR Code"
+                  className="h-20"
+                />
               </div>
             </div>
           </div>

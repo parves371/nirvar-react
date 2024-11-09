@@ -33,7 +33,7 @@ const Footer = ({ page }) => {
       <div
         className={` ${page === "about-us" ? "bg-[#08ac8c]" : "bg-[#07a88c]"}`}
       >
-        <div className="container mx-auto px-4 flex flex-wrap justify-between">
+        <div className="container mx-auto px-4 flex flex-wrap justify-between gap-y-4">
           {/* First Column */}
           <div className="flex flex-col w-full sm:w-[45%] md:w-[30%] lg:w-[23%] mb-8 sm:mb-0">
             <h3 className="font-bold text-lg">Nirvar Image for</h3>
