@@ -16,7 +16,7 @@ const Footer = ({ page }) => {
     <footer
       className={` ${
         page === "about-us" ? "bg-[#f2f4f3]" : "bg-white"
-      } text-white`}
+      } text-white `}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -132,8 +132,8 @@ const Footer = ({ page }) => {
               <FaLinkedinIn />
             </Link>
           </div>
-          <div className="flex items-center justify-center w-full sm:w-1/2">
-            <h3 className="font-bold text-lg mr-2">Download Now:</h3>
+          <div className="flex items-center w-full sm:w-1/2">
+            <h3 className="font-bold lg:text-lg mr-2">Download Now:</h3>
             <div className="flex space-x-2">
               <Link to="#">
                 <img
