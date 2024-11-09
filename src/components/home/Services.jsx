@@ -6,7 +6,11 @@ import { icons } from "../../assets/icons/icons";
 export const Services = () => {
   return (
     <section className="bg-white ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="mb-[-1px]"
+      >
         <path
           fill="#c1f2f2" // Updated fill color
           fillOpacity="1"
@@ -61,7 +65,7 @@ export const Services = () => {
           </div>
         </div>
       </div>
-      
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#c1f2f2" // Fill color

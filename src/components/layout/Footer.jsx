@@ -16,9 +16,13 @@ const Footer = ({ page }) => {
     <footer
       className={` ${
         page === "about-us" ? "bg-[#f2f4f3]" : "bg-white"
-      } text-white `}
+      } text-white`}
     >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="mb-[-1px]"
+      >
         <path
           fill={`${page === "about-us" ? "#08ac8c" : "#07a88c"}`}
           fillOpacity="1"

@@ -6,7 +6,11 @@ import { TitleBack } from "./tittle-back";
 const Testimonial = () => {
   return (
     <section className="bg-[#fff]">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="mb-[-1px]"
+      >
         <path
           fill="#ccddd8" // Updated fill color
           fillOpacity="1"
