@@ -31,6 +31,9 @@ const Navbar = () => {
           <Link to="/contact" className="hover:text-gray-300">
             Contact Us
           </Link>
+          <Link to="/privacy-policy" className="hover:text-gray-300">
+            Privacy Policy
+          </Link>
           <button className="flex  items-center bg-white text-teal-500 px-4 py-2 rounded-lg hover:bg-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
