@@ -11,7 +11,7 @@ const About_Us = () => {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      <HeroSection name={"About Us"} />
       <AboutUs />
       <Services />
       <NirvarPromo />

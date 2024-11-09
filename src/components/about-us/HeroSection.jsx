@@ -1,13 +1,13 @@
 import React from "react";
 
-export const HeroSection = () => {
+export const HeroSection = ({name}) => {
   return (
     <section className="bg-[url('https://images.unsplash.com/photo-1730138056313-dc4b284d8dd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D')] bg-cover relative ">
       <div className="container mx-auto flex flex-col md:flex-row p-8 md:p-20 text-white ">
         {/* Left Text Section */}
         <div className="flex-1 md:pr-10">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 flex items-center justify-center h-[200px]">
-            About Us
+            {name}
           </h1>
         </div>
       </div>
