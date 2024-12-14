@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/layout/Navbar";
+import { Navbar } from "../components/layout/Navbar";
 import { HeroSection } from "../components/about-us/HeroSection";
 import NirvarApp from "../components/services/NirvarApp";
 import MedicalApp from "../components/services/MedicalApp";
-import OurPartner from "../components/home/OurPartner";
-import Footer from "../components/layout/Footer";
+import { OurPartner } from "../components/home/OurPartner";
+import { Footer } from "../components/layout/Footer";
 
 const service = () => {
   return (

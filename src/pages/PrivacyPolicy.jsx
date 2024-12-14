@@ -1,7 +1,7 @@
 import React from "react";
 import Separator from "../components/Separator";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
+import {Navbar} from "../components/layout/Navbar";
+import {Footer} from "../components/layout/Footer";
 import { HeroSection } from "../components/about-us/HeroSection";
 
 function PrivacyPolicy() {
