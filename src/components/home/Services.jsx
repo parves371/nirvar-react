@@ -22,11 +22,11 @@ export const Services = () => {
         <div className=" container mx-auto ">
           <TitleBack back="Services" front="Services" />
 
-          <div className="flex flex-col lg:flex-row lg:space-x-10 justify-between items-center pt-8">
+          <div className="flex flex-col lg:flex-row lg:space-x-10 justify-between items-center pt-8 mt-8">
             {/* Content Section */}
             <div className="lg:w-1/2 w-full">
-              <div className="flex flex-col gap-y-4">
-                <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
+              <div className="flex flex-col gap-y-16">
+                <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 lg:space-x-6">
                   <MedicalHistoryTracking
                     imgink={icons.Medical_History_Tracking}
                     title="Medical History Tracking"
@@ -39,7 +39,7 @@ export const Services = () => {
                     description="Nirvar's advanced medical history tracking capability. Gone are the days of having to manually track and manage medical history. Nirvar's AI-powered system can automatically track and analyze medical history, providing valuable insights and recommendations for better health outcomes."
                   />
                 </div>
-                <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
+                <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 lg:space-x-6">
                   <MedicalHistoryTracking
                     imgink={icons.Doctor_Consultation}
                     title="Doctor Consultation"

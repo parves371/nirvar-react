@@ -23,7 +23,7 @@ export const Testimonial = () => {
           <div className="ml-10 lg:ml-0">
             <TitleBack front={"Testimonial"} back={"Testimonial"} />
           </div>
-          <div className="pt-16"></div>
+          <div className="py-12"/>
           <TestimonialSlider />
         </div>
       </div>

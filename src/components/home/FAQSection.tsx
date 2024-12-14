@@ -36,7 +36,7 @@ export const FAQSection = () => {
         <div className="w-full flex justify-center items-center flex-col mb-12">
           <TitleBack back="FAQ" front="FAQ" />
         </div>
-        <div className="bg-gray-200 p-4 rounded-lg container mx-auto">
+        <div className="bg-gray-200 p-12  rounded-lg container mx-auto">
           {faqItems.map((item, index) => (
             <FAQItem
               key={index}

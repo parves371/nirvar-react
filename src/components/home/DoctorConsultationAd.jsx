@@ -18,7 +18,7 @@ export const DoctorConsultationAd = () => {
             back={"Doctor Consultation"}
             front={"Doctor Consultation"}
           />
-          <p className="text-lg text-gray-600 mx-auto md:mx-0 w-[80%] md:w-full mt-16 mb-16 ">
+          <p className="text-lg text-gray-600 mx-auto md:mx-0 w-[80%] md:w-full mt-16 mb-8 ">
             With Nirvar, connecting with a doctor has never been easier. Say
             goodbye to long waiting times and endless phone calls. With just a
             few taps on your smartphone, you can book an appointment with a

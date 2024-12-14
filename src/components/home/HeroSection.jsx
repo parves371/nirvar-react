@@ -8,7 +8,8 @@ export const HeroSection = () => {
           {/* Left Text Section */}
           <div className="md:w-1/2">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-              Reduce redundancy <br /> and improve your <br /> healthcare experience.
+              Reduce redundancy <br /> and improve your <br /> healthcare
+              experience.
             </h1>
             <p className="text-lg mb-8">
               Empowering your health journey, one tap at a time. Nirvar is the
@@ -28,6 +29,7 @@ export const HeroSection = () => {
             {/* <img className="w-64 h-96" src="IMAGE_SOURCE" alt="home hero" /> */}
           </div>
         </div>
+        <div className="pt-56" />
 
         {/* Wave SVG */}
         <svg
