@@ -11,7 +11,7 @@ import {
 import { MdMailLock } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const Footer = ({ page }) => {
+export const Footer = ({ page }) => {
   return (
     <footer
       className={` ${
@@ -36,7 +36,7 @@ const Footer = ({ page }) => {
         <div className="container mx-auto px-4 flex flex-wrap justify-between gap-y-4">
           {/* First Column */}
           <div className="flex flex-col w-full sm:w-[45%] md:w-[30%] lg:w-[23%] mb-8 sm:mb-0">
-            <h3 className="font-bold text-lg">Nirvar Image for</h3>
+            <h3 className="font-bold text-xl">Nirvar</h3>
             <p className="mt-2 text-sm sm:text-base">
               In this fast-paced world, managing our health and medical needs
               can be a daunting task. From scheduling doctor consultations to
@@ -162,4 +162,3 @@ const Footer = ({ page }) => {
   );
 };
 
-export default Footer;

@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar from "../components/layout/Navbar";
+import { Navbar } from "../components/layout/Navbar";
+import { Footer } from "../components/layout/Footer";
 
 import { DoctorConsultationAd } from "../components/home/DoctorConsultationAd";
-import FAQSection from "../components/home/FAQSection";
+import { FAQSection } from "../components/home/FAQSection";
 import { HeroSection } from "../components/home/HeroSection";
 import { Services } from "../components/home/Services";
-import Testimonial from "../components/home/Testimonial";
-import Footer from "../components/layout/Footer";
-import OurPartner from "../components/home/OurPartner";
+import { Testimonial } from "../components/home/Testimonial";
+import { OurPartner } from "../components/home/OurPartner";
 import { NirvarPromo } from "../components/home/NirvarPromo";
 import { AboutUs } from "../components/home/AboutUs";
 

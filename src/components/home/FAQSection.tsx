@@ -2,7 +2,7 @@ import React from "react";
 import { FAQItem } from "./FAQItem";
 import { TitleBack } from "./tittle-back";
 
-const FAQSection = () => {
+export const FAQSection = () => {
   const faqItems = [
     {
       question: "What products does Nirvar have?",
@@ -61,4 +61,3 @@ const FAQSection = () => {
   );
 };
 
-export default FAQSection;

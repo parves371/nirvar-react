@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -21,15 +21,6 @@ const Navbar = () => {
           </Link>
           <Link to="/service" className="hover:text-gray-300">
             Service
-          </Link>
-          <Link to="/testimonials" className="hover:text-gray-300">
-            Testimonials
-          </Link>
-          <Link to="/faq" className="hover:text-gray-300">
-            FAQ
-          </Link>
-          <Link to="/contact" className="hover:text-gray-300">
-            Contact Us
           </Link>
           <Link to="/privacy-policy" className="hover:text-gray-300">
             Privacy Policy
@@ -133,4 +124,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;

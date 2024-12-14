@@ -2,7 +2,7 @@ import React from "react";
 import OurPartnerSlider from "../slider/OurPartnerSlider";
 import { TitleBack } from "./tittle-back";
 
-const OurPartner = ({ page }) => {
+export const OurPartner = ({ page }) => {
   return (
     <section>
       {page === "about-us" && (
@@ -26,4 +26,3 @@ const OurPartner = ({ page }) => {
   );
 };
 
-export default OurPartner;

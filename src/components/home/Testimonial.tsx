@@ -3,7 +3,7 @@ import TestimonialSlider from "../slider/TestimonialSlider";
 import TestimonialCard from "./testimonial-card";
 import { TitleBack } from "./tittle-back";
 
-const Testimonial = () => {
+export const Testimonial = () => {
   return (
     <section className="bg-[#fff]">
       <svg
@@ -43,4 +43,3 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
