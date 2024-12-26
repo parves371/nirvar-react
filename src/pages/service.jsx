@@ -5,12 +5,13 @@ import NirvarApp from "../components/services/NirvarApp";
 import MedicalApp from "../components/services/MedicalApp";
 import { OurPartner } from "../components/home/OurPartner";
 import { Footer } from "../components/layout/Footer";
+import { images } from "../assets/image_aseets";
 
 const service = () => {
   return (
     <>
       <Navbar />
-      <HeroSection name={"Why Nirvar?"} />
+      <HeroSection name={"Why Nirvar?"} bgurl={images.SERVICES_PAGE_BG} />
       <NirvarApp />
       <MedicalApp />
       <OurPartner page="about-us" />
