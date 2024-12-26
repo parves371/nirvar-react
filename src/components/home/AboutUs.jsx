@@ -1,5 +1,6 @@
 import React from "react";
 import { TitleBack } from "../home/tittle-back";
+import { images } from "../../assets/image_aseets";
 
 export const AboutUs = () => {
   return (
@@ -8,9 +9,10 @@ export const AboutUs = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-[50%]">
             <img
-              src="https://images.unsplash.com/photo-1584467735815-f778f274e296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9jdG9yfGVufDB8fDB8fHww"
+              src={images.ABOUT_US_LEFT}
               alt="Doctor and Patient"
               className="w-[500px] h-[500px] object-cover rounded-lg"
+              loading="lazy"
             />
           </div>
           <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8 px-4">

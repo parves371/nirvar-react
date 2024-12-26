@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { TitleBack } from "./tittle-back";
 
 import Img from "../../assets/Asset-1.webp";
+import { images } from "../../assets/image_aseets";
 
 export const NirvarPromo = () => {
   return (
@@ -16,6 +17,7 @@ export const NirvarPromo = () => {
                 src={Img}
                 alt="Patient Info"
                 className="rounded-lg  w-full h-full object-cover`"
+                loading="lazy"
               />
             </div>
           </div>
@@ -58,15 +60,15 @@ export const NirvarPromo = () => {
             <div className="mt-6">
               <p className="text-gray-600">Download The App Now:</p>
               <div className="flex items-center mt-3 flex-wrap">
-                <Link to="/download">
+                <Link to="#">
                   <img
-                    src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+                    src={images.GOOLGLE_PLAY_ICON}
                     alt="Google Play"
                     className="h-20 w-60"
                   />
                 </Link>
                 <img
-                  src="https://img.freepik.com/premium-vector/vaccination-qr-code-vector-illustration_689336-39.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_siglip"
+                  src={images.SCAN_PIC_NIRVAR_PROMO}
                   alt="QR Code"
                   className="h-20"
                 />

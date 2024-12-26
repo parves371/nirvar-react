@@ -1,9 +1,13 @@
 import React from "react";
+import { images } from "../../assets/image_aseets";
 
 export const HeroSection = () => {
   return (
     <>
-      <section className="bg-[url('https://images.unsplash.com/photo-1730138056313-dc4b284d8dd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat relative h-screen">
+      <section
+        className={`bg-cover bg-center bg-no-repeat relative h-screen`}
+        style={{ backgroundImage: `url(${images.HOME_BG_01})` }}
+      >
         <div className="container mx-auto flex flex-col md:flex-row p-8 md:p-20 text-white">
           {/* Left Text Section */}
           <div className="md:w-1/2">
@@ -23,14 +27,11 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Section */}
-          <div className="mt-10 md:mt-0 md:pl-10 flex justify-center md:w-1/2">
-            {/* Image placeholder for right section */}
-            {/* Uncomment and add image source here if needed */}
-            {/* <img className="w-64 h-96" src="IMAGE_SOURCE" alt="home hero" /> */}
+          <div className="mt-10 md:mt-0 md:pl-10 pt-24 md:w-1/2">
+            <img className="" src={images.HOME_BG_02} alt="home hero" loading="lazy" />
           </div>
         </div>
         <div className="pt-56" />
-
         {/* Wave SVG */}
         <svg
           xmlns="http://www.w3.org/2000/svg"

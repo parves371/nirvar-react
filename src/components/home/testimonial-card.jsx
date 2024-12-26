@@ -10,6 +10,7 @@ const TestimonialCard = ({ name, role, image, testimonial }) => {
               src={image}
               alt={name}
               className="w-20 h-20 sm:w-28 sm:h-28 object-cover rounded-full"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col items-center sm:items-start mt-4 sm:mt-0">

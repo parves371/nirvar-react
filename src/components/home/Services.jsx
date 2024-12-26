@@ -2,6 +2,7 @@ import React from "react";
 import MedicalHistoryTracking from "./services-left";
 import { TitleBack } from "./tittle-back";
 import { icons } from "../../assets/icons/icons";
+import { images } from "../../assets/image_aseets";
 
 export const Services = () => {
   return (
@@ -28,12 +29,12 @@ export const Services = () => {
               <div className="flex flex-col gap-y-16">
                 <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 lg:space-x-6">
                   <MedicalHistoryTracking
-                    imgink={icons.Medical_History_Tracking}
+                    imgink={images.SERVICES_ICON_01}
                     title="Medical History Tracking"
                     description="The most ective method of prescribing drugs. The doctor selects the patient, adds prescriptions, dosages, and directions depending on the patient's medical history and condition, and ensures compliance with current legislation through the platform."
                   />
                   <MedicalHistoryTracking
-                    imgink={icons.Digital_Prescription}
+                    imgink={images.SERVICES_ICON_02}
                     title="Digital Prescription
 "
                     description="Nirvar's advanced medical history tracking capability. Gone are the days of having to manually track and manage medical history. Nirvar's AI-powered system can automatically track and analyze medical history, providing valuable insights and recommendations for better health outcomes."
@@ -41,12 +42,12 @@ export const Services = () => {
                 </div>
                 <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 lg:space-x-6">
                   <MedicalHistoryTracking
-                    imgink={icons.Doctor_Consultation}
+                    imgink={images.SERVICES_ICON_03}
                     title="Doctor Consultation"
                     description="With Nirvar, connecting with a doctor has never been easier. Say goodbye to long waiting times and endless phone calls. With just a few taps on your smartphone, you can book an appointment with a qualified healthcare professional who suits your needs."
                   />
                   <MedicalHistoryTracking
-                    imgink={icons.Doctor_Consultation}
+                    imgink={images.SERVICES_ICON_04}
                     title="My Health"
                     description="Nirvar offers a comprehensive suite of features that cater to all aspects of your health management. In the My Health section, you can monitor your vital signs such as BPM beats per minute  and keep track of conditions like diabetes with ease."
                   />
@@ -57,9 +58,10 @@ export const Services = () => {
             {/* Image Section */}
             <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
               <img
-                src="https://img.freepik.com/premium-photo/close-up-portrait-his-he-nice-attractive-content-experienced-cheerful-cheery-bearded-guy-ceo-boss-chief-director-med-expert-visit-folded-arms-isolated-light-white-gray-pastel-color_274222-20798.jpg?semt=ais_siglip"
+                src={images.SERVICES_RIGHT}
                 alt=""
                 className="w-full h-auto rounded-lg"
+                loading="lazy"
               />
             </div>
           </div>
