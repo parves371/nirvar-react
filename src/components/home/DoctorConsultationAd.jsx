@@ -1,6 +1,6 @@
 import React from "react";
-import { TitleBack } from "./tittle-back";
 import { images } from "../../assets/image_aseets";
+import { TitleBack } from "./tittle-back";
 
 
 export const DoctorConsultationAd = () => {

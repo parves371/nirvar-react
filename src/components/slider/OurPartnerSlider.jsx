@@ -63,6 +63,7 @@ export default function TestimonialSlider() {
                 className="w-72 h-16 bg-cover"
                 src={testimonial.image}
                 alt=""
+                loading="lazy"
               />
             </div>
           </SwiperSlide>

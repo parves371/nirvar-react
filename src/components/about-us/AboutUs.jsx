@@ -1,5 +1,4 @@
 import React from "react";
-import { TitleBack } from "../home/tittle-back";
 import { images } from "../../assets/image_aseets";
 
 export const AboutUs = () => {
