@@ -27,8 +27,13 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Section */}
-          <div className="mt-10 md:mt-0 md:pl-10 pt-24 md:w-1/2">
-            <img className="" src={images.HOME_BG_02} alt="home hero" loading="lazy" />
+          <div className="mt-10 md:mt-0 md:pl-10 pt-64 md:w-1/2">
+            <img
+              className=""
+              src={images.HOME_BG_02}
+              alt="home hero"
+              loading="lazy"
+            />
           </div>
         </div>
         <div className="pt-56" />
