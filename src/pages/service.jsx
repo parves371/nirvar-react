@@ -11,7 +11,7 @@ const service = () => {
   return (
     <>
       <Navbar />
-      <HeroSection name={"Why Nirvar?"} bgurl={images.SERVICES_PAGE_BG} />
+      <HeroSection name={"Why Nirvar?"} bgurl={images.ABOUT_US_PAGE_BG} />
       <NirvarApp />
       <MedicalApp />
       <OurPartner page="about-us" />

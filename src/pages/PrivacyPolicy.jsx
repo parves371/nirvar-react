@@ -3,12 +3,13 @@ import Separator from "../components/Separator";
 import {Navbar} from "../components/layout/Navbar";
 import {Footer} from "../components/layout/Footer";
 import { HeroSection } from "../components/about-us/HeroSection";
+import { images } from "../assets/image_aseets";
 
 function PrivacyPolicy() {
   return (
     <>
       <Navbar />
-      <HeroSection name={"Privacy Policy"} />
+      <HeroSection name={"Privacy Policy"} bgurl={images.ABOUT_US_PAGE_BG} />
 
       <div className="max-w-[1000px] mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-4 text-[#80c3d0]">

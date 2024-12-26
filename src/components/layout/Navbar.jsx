@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { images } from "../../assets/image_aseets";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +9,12 @@ export const Navbar = () => {
     <section className="bg-gradient-to-r from-teal-500 to-green-500">
       <nav className="p-4 flex items-center justify-between container mx-auto">
         <div className="flex items-center">
-          <span className="text-white font-bold text-2xl">nirvar</span>
+          <img
+            src={images.FOOTER_LOGO}
+            alt="logo"
+            className="w-56"
+            loading="lazy"
+          />
         </div>
 
         {/* Desktop Links */}
@@ -123,4 +129,3 @@ export const Navbar = () => {
     </section>
   );
 };
-

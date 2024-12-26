@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { images } from "../../assets/image_aseets";
 
 function NirvarApp() {
   return (
@@ -22,15 +23,15 @@ function NirvarApp() {
           <div className="flex items-center mt-3 flex-wrap gap-4">
             <Link to="/download">
               <img
-                src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+                src={images.GOOLGLE_PLAY_ICON}
                 alt="Google Play"
                 className="h-16 lg:h-20 w-48 lg:w-60"
               />
             </Link>
             <img
-              src="https://img.freepik.com/premium-vector/vaccination-qr-code-vector-illustration_689336-39.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_siglip"
+              src={images.SCAN_PIC_NIRVAR_PROMO}
               alt="QR Code"
-              className="h-16 lg:h-20 w-16 lg:w-28"
+              className="size-16 lg:size-20"
             />
           </div>
         </div>
@@ -38,8 +39,9 @@ function NirvarApp() {
       <div className="lg:w-[30%] w-full">
         <img
           className="w-full h-full object-cover"
-          src="https://media.istockphoto.com/id/1434119023/photo/black-man-hands-and-phone-mockup-at-the-office-for-communication-social-media-or-texting-at.jpg?s=612x612&w=0&k=20&c=U7fgZvgME6XR66lN7KwsljpArs9jWLUWn74rQynAlq4="
+          src={images.SERVICES_PAGE_LEFT}
           alt="Nirvar App Preview"
+          loading="lazy"
         />
       </div>
     </div>

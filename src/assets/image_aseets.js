@@ -19,6 +19,7 @@ import ABOUT_US_PAGE_LEFT from "./image/about_us_left.png";
 
 // services image assets
 import SERVICES_PAGE_BG from "./image/services_page_bg.png";
+import SERVICES_PAGE_LEFT from "./image/services_page_app_left.png";
 
 export const images = {
   HOME_BG_01,
@@ -36,4 +37,5 @@ export const images = {
   ABOUT_US_PAGE_BG,
   ABOUT_US_PAGE_LEFT,
   SERVICES_PAGE_BG,
+  SERVICES_PAGE_LEFT
 };
