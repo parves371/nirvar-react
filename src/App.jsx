@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { PageSkeleton } from "./components/layout/Loaders";
 
 const Home = lazy(() => import("./pages/Home"));
 const About_Us = lazy(() => import("./pages/About-Us"));
@@ -9,7 +10,7 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageSkeleton />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About_Us />} />
