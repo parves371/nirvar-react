@@ -11,6 +11,7 @@ export const AboutUs = () => {
               src={images.ABOUT_US_PAGE_LEFT}
               alt="Doctor and Patient"
               className="w-[500px] h-[500px] object-cover rounded-lg"
+              loading="lazy"
             />
           </div>
           <div className="w-full md:w-[50%] mt-8 md:mt-0 md:ml-8 px-4 ">

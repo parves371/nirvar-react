@@ -141,6 +141,7 @@ export const Footer = ({ page }) => {
                   className="w-32 h-10"
                   src={images.GOOLGLE_PLAY_ICON}
                   alt="Google Play"
+                  loading="lazy"
                 />
               </Link>
               <Link to="#">
@@ -148,6 +149,7 @@ export const Footer = ({ page }) => {
                   className="w-32 h-10"
                   src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-mac-app-store.svg"
                   alt="App Store"
+                  loading="lazy"
                 />
               </Link>
             </div>

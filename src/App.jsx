@@ -1,9 +1,10 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import About_Us from "./pages/About-Us";
-import Home from "./pages/Home";
-import Service from "./pages/service";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+
+const Home = lazy(() => import("./pages/Home"));
+const About_Us = lazy(() => import("./pages/About-Us"));
+const Service = lazy(() => import("./pages/Service"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 
 const App = () => {
   return (
