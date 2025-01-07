@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/Home"));
 const About_Us = lazy(() => import("./pages/About-Us"));
@@ -8,14 +8,16 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About_Us />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
-    </Router>
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About_Us />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 };
 

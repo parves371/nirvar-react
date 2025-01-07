@@ -11,7 +11,7 @@ import DOCTOR_LEFT from "./image/doctor_left.png";
 import SCAN_PIC_NIRVAR_PROMO from "./promo/scan_pic.png";
 import GOOLGLE_PLAY_ICON from "./promo/google_play_icon.png";
 
-import FOOTER_LOGO from "../../public/nirvar_fotter_logo.png";
+import FOOTER_LOGO from "/nirvar_fotter_logo.png";
 
 // about us image assets
 import ABOUT_US_PAGE_BG from "./image/about_page_bg.webp";
