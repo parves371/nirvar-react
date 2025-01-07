@@ -1,8 +1,7 @@
 import React from "react";
+import { images } from "../../assets/image_aseets";
 import MedicalHistoryTracking from "./services-left";
 import { TitleBack } from "./tittle-back";
-import { icons } from "../../assets/icons/icons";
-import { images } from "../../assets/image_aseets";
 
 export const Services = () => {
   return (
@@ -59,7 +58,7 @@ export const Services = () => {
             <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
               <img
                 src={images.SERVICES_RIGHT}
-                alt=""
+                alt="services"
                 className="w-full h-auto rounded-lg"
                 loading="lazy"
               />

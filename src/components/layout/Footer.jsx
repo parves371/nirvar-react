@@ -37,7 +37,7 @@ export const Footer = ({ page }) => {
         <div className="container mx-auto px-4 flex flex-wrap justify-between gap-y-4">
           {/* First Column */}
           <div className="flex flex-col w-full sm:w-[45%] md:w-[30%] lg:w-[23%] mb-8 sm:mb-0">
-            <img src={images.FOOTER_LOGO} alt="FOOTER  LOGO" />
+            <img src={images.FOOTER_LOGO} alt="FOOTER  LOGO" loading="lazy" />
             <p className="mt-2 text-sm sm:text-base">
               In this fast-paced world, managing our health and medical needs
               can be a daunting task. From scheduling doctor consultations to

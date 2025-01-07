@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { images } from "../../assets/image_aseets";
 
-export const Navbar = () => {
+export const Navbar = React.memo(() => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <section className="bg-gradient-to-r from-teal-500 to-green-500">
@@ -11,27 +13,42 @@ export const Navbar = () => {
         <div className="flex items-center">
           <img
             src={images.FOOTER_LOGO}
-            alt="logo"
+            alt="Salon - Your Trusted E-Commerce Partner"
             className="w-56"
             loading="lazy"
           />
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 text-white  items-center">
-          <Link to="/" className="hover:text-gray-300">
+        <div className="hidden md:flex space-x-6 text-white items-center">
+          <Link to="/" className="hover:text-gray-300" title="Navigate to Home">
             Home
           </Link>
-          <Link to="/about" className="hover:text-gray-300">
+          <Link
+            to="/about"
+            className="hover:text-gray-300"
+            title="Learn About Us"
+          >
             About Us
           </Link>
-          <Link to="/service" className="hover:text-gray-300">
+          <Link
+            to="/service"
+            className="hover:text-gray-300"
+            title="Explore Services"
+          >
             Service
           </Link>
-          <Link to="/privacy-policy" className="hover:text-gray-300">
+          <Link
+            to="/privacy-policy"
+            className="hover:text-gray-300"
+            title="Privacy Policy"
+          >
             Privacy Policy
           </Link>
-          <button className="flex  items-center bg-white text-teal-500 px-4 py-2 rounded-lg hover:bg-gray-200">
+          <button
+            className="flex items-center bg-white text-teal-500 px-4 py-2 rounded-lg hover:bg-gray-200"
+            title="Login to your account"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -50,82 +67,69 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation menu"
           className="flex md:hidden items-center bg-white text-[#14B8A6] px-4 py-2 rounded-lg hover:bg-gray-200"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={toggleMenu}
         >
           <svg
-            className="h-5 w-5" // Tailwind CSS classes for height and width
-            viewBox="0 0 24 24" // Viewbox for the SVG
-            fill="none" // Fill property
-            xmlns="http://www.w3.org/2000/svg" // XML namespace
-            stroke="#14B8A6" // Stroke color
+            className="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#14B8A6"
           >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round" // Rounded ends for strokes
-              strokeLinejoin="round" // Rounded joints for strokes
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M4 6H20M4 12H20M4 18H20" // Path data for the hamburger lines
-                stroke="#14B8A6" // Stroke color for the path
-                strokeWidth="2" // Stroke width for the path
-                strokeLinecap="round" // Rounded ends for the lines
-                strokeLinejoin="round" // Rounded joints for the lines
-              />
-            </g>
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </button>
 
         {/* Mobile Links */}
-        {isMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-gradient-to-r from-teal-500 to-green-500 text-white flex flex-col space-y-4 py-4 px-6 md:hidden z-10">
-            <Link
-              to="/"
-              className="hover:text-gray-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="hover:text-gray-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About Us
-            </Link>
-            <Link
-              to="/service"
-              className="hover:text-gray-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Service
-            </Link>
-            <Link
-              to="/testimonials"
-              className="hover:text-gray-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
-            </Link>
-            <Link
-              to="/faq"
-              className="hover:text-gray-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              FAQ
-            </Link>
-            <Link
-              to="/contact"
-              className="hover:text-gray-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact Us
-            </Link>
-          </div>
-        )}
+        <div
+          className={`${
+            isMenuOpen ? "flex" : "hidden"
+          } absolute top-16 left-0 w-full bg-gradient-to-r from-teal-500 to-green-500 text-white flex-col space-y-4 py-4 px-6 md:hidden z-10`}
+        >
+          <Link to="/" className="hover:text-gray-300" onClick={toggleMenu}>
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="hover:text-gray-300"
+            onClick={toggleMenu}
+          >
+            About Us
+          </Link>
+          <Link
+            to="/service"
+            className="hover:text-gray-300"
+            onClick={toggleMenu}
+          >
+            Service
+          </Link>
+          <Link
+            to="/testimonials"
+            className="hover:text-gray-300"
+            onClick={toggleMenu}
+          >
+            Testimonials
+          </Link>
+          <Link to="/faq" className="hover:text-gray-300" onClick={toggleMenu}>
+            FAQ
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:text-gray-300"
+            onClick={toggleMenu}
+          >
+            Contact Us
+          </Link>
+        </div>
       </nav>
     </section>
   );
-};
+});
