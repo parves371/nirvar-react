@@ -15,7 +15,7 @@ export const Navbar = React.memo(() => {
             src={images.FOOTER_LOGO}
             alt="Salon - Your Trusted E-Commerce Partner"
             className="w-56"
-            loading="lazy"
+            loading="eager"
           />
         </div>
 
